@@ -103,7 +103,7 @@ public class LinkedListv10<T> implements Iterable<T> {
                 tmp = tmp.next;
             }
 
-            T d = tmp.data;
+            T d = tmp.next.data;
             tmp.next = tmp.next.next;
             return d;
         }
